@@ -1,0 +1,254 @@
+{
+  "Uuid": "54cd3308-ad4e-4820-8aaf-ed74e51687f3",
+  "IsCustomNode": false,
+  "Description": null,
+  "Name": "DynamoTemplate",
+  "ElementResolver": {
+    "ResolutionMap": {}
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [],
+  "Connectors": [],
+  "Dependencies": [],
+  "NodeLibraryDependencies": [],
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.3.0.5885",
+      "RunType": "Automatic",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Background Preview",
+      "EyeX": -17.0,
+      "EyeY": 24.0,
+      "EyeZ": 50.0,
+      "LookX": 12.0,
+      "LookY": -13.0,
+      "LookZ": -58.0,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0
+    },
+    "NodeViews": [],
+    "Annotations": [
+      {
+        "Id": "8c8fb8eed21c4e33b46840e96cc53aef",
+        "Title": "PROJECT NAME, NUMBER AND GUIDELINES",
+        "Nodes": [
+          "701a50cc523f440b9aebc91802c229c2"
+        ],
+        "Left": 316.59602317020392,
+        "Top": -93.367317487894184,
+        "Width": 237.0,
+        "Height": 242.0,
+        "FontSize": 36.0,
+        "InitialTop": 89.632682512105816,
+        "InitialHeight": 89.0,
+        "TextblockHeight": 173.0,
+        "Background": "#FFBB87C6"
+      },
+      {
+        "Id": "228ad1b4490c4481974166a9b77fa73b",
+        "Title": "PYTHON",
+        "Nodes": [
+          "7dcc5020b5b147b3a50930d495b13f61"
+        ],
+        "Left": 602.57924797728219,
+        "Top": 33.983224807078045,
+        "Width": 149.23666666666668,
+        "Height": 112.0,
+        "FontSize": 36.0,
+        "InitialTop": 86.983224807078045,
+        "InitialHeight": 74.0,
+        "TextblockHeight": 43.0,
+        "Background": "#FFFF7BAC"
+      },
+      {
+        "Id": "ad8b6536c52943eca83cedca9506bc3b",
+        "Title": "WIP",
+        "Nodes": [
+          "01e6bcdca9a54f2d8180b304a7fe57de"
+        ],
+        "Left": 803.30433835977738,
+        "Top": 33.258134424582636,
+        "Width": 151.0,
+        "Height": 112.0,
+        "FontSize": 36.0,
+        "InitialTop": 86.258134424582636,
+        "InitialHeight": 89.0,
+        "TextblockHeight": 43.0,
+        "Background": "#FFFFAA45"
+      },
+      {
+        "Id": "6c3e543787084a9b9aee758eff4eb894",
+        "Title": "TO REVIT",
+        "Nodes": [
+          "45156b0ed34c4190b8d380668f1bce1a"
+        ],
+        "Left": 1003.6548806547494,
+        "Top": 32.258134424582636,
+        "Width": 191.0,
+        "Height": 112.0,
+        "FontSize": 36.0,
+        "InitialTop": 85.258134424582636,
+        "InitialHeight": 89.0,
+        "TextblockHeight": 43.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "ea2c88097fa74c2989af5bc910c5c8be",
+        "Title": "OUTPUT",
+        "Nodes": [
+          "204e961e3eb944b8b99ff05321a21b7c"
+        ],
+        "Left": 1425.6164136629404,
+        "Top": 29.983224807077988,
+        "Width": 145.0,
+        "Height": 112.0,
+        "FontSize": 36.0,
+        "InitialTop": 82.983224807077988,
+        "InitialHeight": 89.0,
+        "TextblockHeight": 43.0,
+        "Background": "#FF48B9FF"
+      },
+      {
+        "Id": "e6803b4c6f91452b859a880159a59d1c",
+        "Title": "CONTROL",
+        "Nodes": [
+          "68b6ae33ca534280a250df3510b680c5"
+        ],
+        "Left": 1622.5203904927362,
+        "Top": 28.708315189573398,
+        "Width": 169.52,
+        "Height": 112.0,
+        "FontSize": 36.0,
+        "InitialTop": 81.7083151895734,
+        "InitialHeight": 89.0,
+        "TextblockHeight": 43.0,
+        "Background": "#FF848484"
+      },
+      {
+        "Id": "00780853fddf4addabd0dd0105848c15",
+        "Title": "INPUT",
+        "Nodes": [
+          "234087131e9e4560bb1b3fcfb13cbeb1"
+        ],
+        "Left": 1234.59370917654,
+        "Top": 30.859580544508447,
+        "Width": 136.0,
+        "Height": 112.0,
+        "FontSize": 36.0,
+        "InitialTop": 83.859580544508447,
+        "InitialHeight": 89.0,
+        "TextblockHeight": 43.0,
+        "Background": "#FF71C6A8"
+      },
+      {
+        "Id": "701a50cc523f440b9aebc91802c229c2",
+        "Title": "A description of the project and what                                        the purpose of this script is.  ",
+        "Nodes": [],
+        "Left": 326.59602317020392,
+        "Top": 89.632682512105816,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "7dcc5020b5b147b3a50930d495b13f61",
+        "Title": "Use:\r\nFor Python scripts.",
+        "Nodes": [],
+        "Left": 612.57924797728219,
+        "Top": 86.983224807078045,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "01e6bcdca9a54f2d8180b304a7fe57de",
+        "Title": "Use:\r\nFor unfinished nodes",
+        "Nodes": [],
+        "Left": 813.30433835977738,
+        "Top": 86.258134424582636,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "45156b0ed34c4190b8d380668f1bce1a",
+        "Title": "Use:\r\nTo import geometry to Revit.",
+        "Nodes": [],
+        "Left": 1013.6548806547494,
+        "Top": 85.258134424582636,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "204e961e3eb944b8b99ff05321a21b7c",
+        "Title": "Use:\r\nTo monitor outputs.",
+        "Nodes": [],
+        "Left": 1435.6164136629404,
+        "Top": 82.983224807077988,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "68b6ae33ca534280a250df3510b680c5",
+        "Title": "Use:\r\nTo control variables. ",
+        "Nodes": [],
+        "Left": 1632.5203904927362,
+        "Top": 81.7083151895734,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "234087131e9e4560bb1b3fcfb13cbeb1",
+        "Title": "Use:\r\nTo monitor inputs.",
+        "Nodes": [],
+        "Left": 1244.59370917654,
+        "Top": 83.859580544508447,
+        "Width": 0.0,
+        "Height": 0.0,
+        "FontSize": 36.0,
+        "InitialTop": 0.0,
+        "InitialHeight": 0.0,
+        "TextblockHeight": 0.0,
+        "Background": "#FFC1D676"
+      }
+    ],
+    "X": 87.871455041281649,
+    "Y": 224.79094716786813,
+    "Zoom": 0.78436932804482717
+  }
+}

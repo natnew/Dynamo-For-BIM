@@ -1,0 +1,703 @@
+{
+  "Uuid": "8d5ce0b7-e884-4a44-963e-b63d4b27caa6",
+  "IsCustomNode": false,
+  "Description": null,
+  "Name": "Get_Change_Create A Workset",
+  "ElementResolver": {
+    "ResolutionMap": {}
+  },
+  "Inputs": [],
+  "Outputs": [],
+  "Nodes": [
+    {
+      "ConcreteType": "archilabUI.WorksetUi, archilabUI",
+      "SelectedIndex": 0,
+      "SelectedString": "\"PAT-AR-TEST_WORKSET",
+      "NodeType": "ExtensionNode",
+      "Id": "ef5ed7f5214849bbb328c16df5f9e070",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "b14b44528f8447edaa2d986f619ce18f",
+          "Name": "workset",
+          "Description": "The selected workset",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Retrieve all available Worksets."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "29953a1196d84cfaac33ca2456b7fb00",
+      "Inputs": [
+        {
+          "Id": "4cf7c533ee234901979645bf474cd1d0",
+          "Name": "",
+          "Description": "Node to evaluate.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "2cda67ca04d64eb6bdc5612e2b77bd99",
+          "Name": "",
+          "Description": "Watch contents.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualize the output of node."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "archilab.Revit.Elements.Workset.ByName@string",
+      "Id": "e88a1bb5fdb547d3b48a3059d6f978d3",
+      "Inputs": [
+        {
+          "Id": "a9d1e9def50f458c9c2c40004ce1c3f3",
+          "Name": "name",
+          "Description": "string",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "4bf3b13555ca4e1295b680fcb2a5547f",
+          "Name": "Workset",
+          "Description": "Workset",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Create Workset by Name.\n\nWorkset.ByName (name: string): Workset"
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
+      "NodeType": "StringInputNode",
+      "InputValue": "PAT-AR-TEST_WORKSET",
+      "Id": "e2849c51b9864566a501edb7715b7bd6",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "2aaa24d9c5464709ba6689cfa45b1545",
+          "Name": "",
+          "Description": "String",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Creates a string."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "d292b4d354294d1d904a8d0177735031",
+      "Inputs": [
+        {
+          "Id": "81cfbd1b2dee49b9885f93d18da8aad0",
+          "Name": "",
+          "Description": "Node to evaluate.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "424a2c96de124db3b99c28ea27291371",
+          "Name": "",
+          "Description": "Watch contents.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualize the output of node."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "archilab.Revit.Elements.Workset.Rename@archilab.Revit.Elements.Workset,string",
+      "Id": "4c1761171d0e44c1a23110b329834dc6",
+      "Inputs": [
+        {
+          "Id": "0c127b495f134ec084d276c34723f9ca",
+          "Name": "workset",
+          "Description": "Workset",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        },
+        {
+          "Id": "6fb24c5f0b9847afb8dcc6eaea26dde4",
+          "Name": "name",
+          "Description": "string",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "2d1d52107d564b97afc419f6e091bb25",
+          "Name": "Workset",
+          "Description": "Workset",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Workset.Rename (workset: Workset, name: string): Workset"
+    },
+    {
+      "ConcreteType": "archilabUI.WorksetUi, archilabUI",
+      "SelectedIndex": 32,
+      "SelectedString": "Workset1",
+      "NodeType": "ExtensionNode",
+      "Id": "912ba62c352f4a21939aefd8b98fa974",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "67572738e126458a939a01156f225c89",
+          "Name": "workset",
+          "Description": "The selected workset",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Retrieve all available Worksets."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Input.StringInput, CoreNodeModels",
+      "NodeType": "StringInputNode",
+      "InputValue": "PAT-AR-TEST_WORKSET1",
+      "Id": "1aaa3a3ec335490aa14853a6eb630118",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "2ca824b1ecd14126bc618abfc44661d5",
+          "Name": "",
+          "Description": "String",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Creates a string."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "6bfb554e3b6647e6ab5629a0f6c1ae13",
+      "Inputs": [
+        {
+          "Id": "2b061cb9504d48b6b906c99ce9106ede",
+          "Name": "",
+          "Description": "Node to evaluate.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "24928587c531483ebbd14ac91a4f3e01",
+          "Name": "",
+          "Description": "Watch contents.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualize the output of node."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "archilab.Revit.Selection.Select.ByWorkset@archilab.Revit.Elements.Workset",
+      "Id": "d9e3789c2ced4aae9bf7845f3841ad61",
+      "Inputs": [
+        {
+          "Id": "cd676409c8a2496faea93669cba66ee8",
+          "Name": "workset",
+          "Description": "Workset that we are filtering for.\n\nWorkset",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "ac13f4b2564a42a8b1fedf9c03a42fc5",
+          "Name": "Element",
+          "Description": "Elements that passed the workset filter.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Returns all elements at a given workset.\n\nSelect.ByWorkset (workset: Workset): Element[]"
+    },
+    {
+      "ConcreteType": "archilabUI.WorksetUi, archilabUI",
+      "SelectedIndex": 32,
+      "SelectedString": "Workset1",
+      "NodeType": "ExtensionNode",
+      "Id": "3a11750fbda74b148491cf932d059235",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "d45affdb79724a87a08ae5ade7c45aa5",
+          "Name": "workset",
+          "Description": "The selected workset",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Retrieve all available Worksets."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "8775caa844624cd7869a6518e023ff92",
+      "Inputs": [
+        {
+          "Id": "d55e020ff6de420d999648beb5cdf024",
+          "Name": "",
+          "Description": "Node to evaluate.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "c0648fbb0f6243b2a25a248b34dc8474",
+          "Name": "",
+          "Description": "Watch contents.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualize the output of node."
+    },
+    {
+      "ConcreteType": "CoreNodeModels.Watch, CoreNodeModels",
+      "NodeType": "ExtensionNode",
+      "Id": "a2864f4cbf8e49ac8b304fb89365ec8b",
+      "Inputs": [
+        {
+          "Id": "206a2da0b4ba4882a53bbc3b7312799a",
+          "Name": "",
+          "Description": "Node to evaluate.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Outputs": [
+        {
+          "Id": "e4e361415e9c4cabae47c082dfba5b6b",
+          "Name": "",
+          "Description": "Watch contents.",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Disabled",
+      "Description": "Visualize the output of node."
+    },
+    {
+      "ConcreteType": "Dynamo.Graph.Nodes.ZeroTouch.DSFunction, DynamoCore",
+      "NodeType": "FunctionNode",
+      "FunctionSignature": "archilab.Revit.Elements.Workset.GetAll",
+      "Id": "d24de8a4ae684e6e85b9719260b0b65c",
+      "Inputs": [],
+      "Outputs": [
+        {
+          "Id": "273ea198af84451ea9c6116622d04cc7",
+          "Name": "Workset",
+          "Description": "Worksets",
+          "UsingDefaultValue": false,
+          "Level": 2,
+          "UseLevels": false,
+          "KeepListStructure": false
+        }
+      ],
+      "Replication": "Auto",
+      "Description": "Retrieves all user created Worksets.\n\nWorkset.GetAll ( ): Workset[]"
+    }
+  ],
+  "Connectors": [
+    {
+      "Start": "b14b44528f8447edaa2d986f619ce18f",
+      "End": "4cf7c533ee234901979645bf474cd1d0",
+      "Id": "20b873a5d8514e7887972718b6ca6cc9"
+    },
+    {
+      "Start": "4bf3b13555ca4e1295b680fcb2a5547f",
+      "End": "81cfbd1b2dee49b9885f93d18da8aad0",
+      "Id": "e49a007311564da2994c066fccad3f63"
+    },
+    {
+      "Start": "2aaa24d9c5464709ba6689cfa45b1545",
+      "End": "a9d1e9def50f458c9c2c40004ce1c3f3",
+      "Id": "74e5996fc0b24396b8ff9418c60a8e67"
+    },
+    {
+      "Start": "2d1d52107d564b97afc419f6e091bb25",
+      "End": "2b061cb9504d48b6b906c99ce9106ede",
+      "Id": "62b511c7418c4dd5bfef5a3d59707e6e"
+    },
+    {
+      "Start": "67572738e126458a939a01156f225c89",
+      "End": "0c127b495f134ec084d276c34723f9ca",
+      "Id": "79e0bf1ff18446c1ba7e43468edccb8b"
+    },
+    {
+      "Start": "2ca824b1ecd14126bc618abfc44661d5",
+      "End": "6fb24c5f0b9847afb8dcc6eaea26dde4",
+      "Id": "9a89ad4a903640f9b9c923c4f72e839d"
+    },
+    {
+      "Start": "ac13f4b2564a42a8b1fedf9c03a42fc5",
+      "End": "d55e020ff6de420d999648beb5cdf024",
+      "Id": "a22156433efc46a1891bfc8d3a0a68b9"
+    },
+    {
+      "Start": "d45affdb79724a87a08ae5ade7c45aa5",
+      "End": "cd676409c8a2496faea93669cba66ee8",
+      "Id": "f4dc482945094a6c9b6af84513832e14"
+    },
+    {
+      "Start": "273ea198af84451ea9c6116622d04cc7",
+      "End": "206a2da0b4ba4882a53bbc3b7312799a",
+      "Id": "79d5443634344d7a8b9e997189386484"
+    }
+  ],
+  "Dependencies": [],
+  "NodeLibraryDependencies": [
+    {
+      "Name": "archi-lab.net",
+      "Version": "2020.23.11",
+      "ReferenceType": "Package",
+      "Nodes": [
+        "ef5ed7f5214849bbb328c16df5f9e070",
+        "e88a1bb5fdb547d3b48a3059d6f978d3",
+        "4c1761171d0e44c1a23110b329834dc6",
+        "912ba62c352f4a21939aefd8b98fa974",
+        "d9e3789c2ced4aae9bf7845f3841ad61",
+        "3a11750fbda74b148491cf932d059235",
+        "d24de8a4ae684e6e85b9719260b0b65c"
+      ]
+    }
+  ],
+  "Bindings": [],
+  "View": {
+    "Dynamo": {
+      "ScaleFactor": 1.0,
+      "HasRunWithoutCrash": true,
+      "IsVisibleInDynamoLibrary": true,
+      "Version": "2.3.0.5885",
+      "RunType": "Manual",
+      "RunPeriod": "1000"
+    },
+    "Camera": {
+      "Name": "Background Preview",
+      "EyeX": -17.0,
+      "EyeY": 24.0,
+      "EyeZ": 50.0,
+      "LookX": 12.0,
+      "LookY": -13.0,
+      "LookZ": -58.0,
+      "UpX": 0.0,
+      "UpY": 1.0,
+      "UpZ": 0.0
+    },
+    "NodeViews": [
+      {
+        "ShowGeometry": true,
+        "Name": "Worksets",
+        "Id": "ef5ed7f5214849bbb328c16df5f9e070",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": true,
+        "X": 193.68726015006962,
+        "Y": 117.85336501204466
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Watch",
+        "Id": "29953a1196d84cfaac33ca2456b7fb00",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 481.87495936161395,
+        "Y": 116.99200857934943
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Workset.ByName",
+        "Id": "e88a1bb5fdb547d3b48a3059d6f978d3",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 401.21790101629858,
+        "Y": 317.71790101629858
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "String",
+        "Id": "e2849c51b9864566a501edb7715b7bd6",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": true,
+        "X": 197.71790101629858,
+        "Y": 316.71790101629858
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Watch",
+        "Id": "d292b4d354294d1d904a8d0177735031",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 644.71790101629858,
+        "Y": 317.71790101629858
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Workset.Rename",
+        "Id": "4c1761171d0e44c1a23110b329834dc6",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 414.5,
+        "Y": 553.0
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Worksets",
+        "Id": "912ba62c352f4a21939aefd8b98fa974",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": true,
+        "X": 203.5,
+        "Y": 534.0
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "String",
+        "Id": "1aaa3a3ec335490aa14853a6eb630118",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": true,
+        "X": 200.0,
+        "Y": 628.0
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Watch",
+        "Id": "6bfb554e3b6647e6ab5629a0f6c1ae13",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 687.0,
+        "Y": 557.0
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Select.ByWorkset",
+        "Id": "d9e3789c2ced4aae9bf7845f3841ad61",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 481.22847620573725,
+        "Y": 804.05325670518653
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Worksets",
+        "Id": "3a11750fbda74b148491cf932d059235",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 198.55601176798586,
+        "Y": 804.29636510249475
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Watch",
+        "Id": "8775caa844624cd7869a6518e023ff92",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 761.27607546188767,
+        "Y": 796.97273955740411
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Watch",
+        "Id": "a2864f4cbf8e49ac8b304fb89365ec8b",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 375.5357108915814,
+        "Y": 1276.3630778972406
+      },
+      {
+        "ShowGeometry": true,
+        "Name": "Workset.GetAll",
+        "Id": "d24de8a4ae684e6e85b9719260b0b65c",
+        "IsSetAsInput": false,
+        "IsSetAsOutput": false,
+        "Excluded": false,
+        "X": 198.71465122384723,
+        "Y": 1280.2903728775859
+      }
+    ],
+    "Annotations": [
+      {
+        "Id": "c3e2ee284f9f4929bd3d123f4fe4901c",
+        "Title": "CREATE A NEW WORKSET",
+        "Nodes": [
+          "e88a1bb5fdb547d3b48a3059d6f978d3",
+          "e2849c51b9864566a501edb7715b7bd6",
+          "d292b4d354294d1d904a8d0177735031"
+        ],
+        "Left": 187.71790101629858,
+        "Top": 263.71790101629858,
+        "Width": 545.0,
+        "Height": 148.0,
+        "FontSize": 36.0,
+        "InitialTop": 316.71790101629858,
+        "InitialHeight": 146.0,
+        "TextblockHeight": 43.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "62e1a89c2e3f427b848a8f43f92fa418",
+        "Title": "RENAME A WORKSET",
+        "Nodes": [
+          "4c1761171d0e44c1a23110b329834dc6",
+          "912ba62c352f4a21939aefd8b98fa974",
+          "1aaa3a3ec335490aa14853a6eb630118",
+          "6bfb554e3b6647e6ab5629a0f6c1ae13"
+        ],
+        "Left": 190.0,
+        "Top": 481.0,
+        "Width": 585.0,
+        "Height": 215.0,
+        "FontSize": 36.0,
+        "InitialTop": 534.0,
+        "InitialHeight": 239.0,
+        "TextblockHeight": 43.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "8e6aec89ee3540b190971f3ae8917712",
+        "Title": "SELECT ALL ELEMENTS ON A WORKSET",
+        "Nodes": [
+          "d9e3789c2ced4aae9bf7845f3841ad61",
+          "3a11750fbda74b148491cf932d059235",
+          "8775caa844624cd7869a6518e023ff92"
+        ],
+        "Left": 188.55601176798586,
+        "Top": 743.97273955740411,
+        "Width": 824.72006369390181,
+        "Height": 431.0,
+        "FontSize": 36.0,
+        "InitialTop": 796.97273955740411,
+        "InitialHeight": 152.32362554509064,
+        "TextblockHeight": 43.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "6a7c3a635088400fb8496f592dd5d75b",
+        "Title": "LIST WORKSETS",
+        "Nodes": [
+          "ef5ed7f5214849bbb328c16df5f9e070",
+          "29953a1196d84cfaac33ca2456b7fb00"
+        ],
+        "Left": 183.68726015006962,
+        "Top": 63.992008579349431,
+        "Width": 386.18769921154433,
+        "Height": 146.86135643269523,
+        "FontSize": 36.0,
+        "InitialTop": 116.99200857934943,
+        "InitialHeight": 145.86135643269523,
+        "TextblockHeight": 43.0,
+        "Background": "#FFC1D676"
+      },
+      {
+        "Id": "464a48a73c0d4038bd24e02878780f94",
+        "Title": "LIST ALL WORKSETS",
+        "Nodes": [
+          "a2864f4cbf8e49ac8b304fb89365ec8b",
+          "d24de8a4ae684e6e85b9719260b0b65c"
+        ],
+        "Left": 188.71465122384723,
+        "Top": 1223.3630778972406,
+        "Width": 486.82105966773418,
+        "Height": 431.0,
+        "FontSize": 36.0,
+        "InitialTop": 1276.3630778972406,
+        "InitialHeight": 148.92729498034532,
+        "TextblockHeight": 43.0,
+        "Background": "#FFC1D676"
+      }
+    ],
+    "X": -395.71170827481569,
+    "Y": -1201.3114976930151,
+    "Zoom": 1.1815234990029857
+  }
+}

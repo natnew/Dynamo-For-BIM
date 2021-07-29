@@ -13,7 +13,7 @@ The Scripts are the following:
 
 *Dynamo template
 
-*Edit titleblock parameters from Excel
+*Edit title block parameters from Excel
 
 *Excel to Revit
 
